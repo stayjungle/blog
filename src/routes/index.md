@@ -2,6 +2,6 @@
   import Hello from '$lib/components/Hello.svelte'
 </script>
 
-# 아하하
+# 한글 테스트
 
-<Hello name="World" />
+컴포넌트 테스트: <Hello name="World" />
