@@ -22,10 +22,6 @@
     margin-bottom: 1rem;
   }
 
-  :global(p, li) {
-    font-weight: lighter;
-  }
-
   main {
     max-width: 40rem;
     margin: 0 auto;
