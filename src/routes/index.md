@@ -1,12 +1,5 @@
-<script>
-  import Hello from '$lib/components/Hello.svelte'
-</script>
+# 스테이정글 블로그
 
-<svelte:head>
-  <meta name="description" content="스테이정글 블로그, 건겅한 식단, 정기배송" />
-  <title>스테이정글 블로그</title>
-</svelte:head>
+준비중입니다.
 
-# 한글 테스트
-
-컴포넌트 테스트: <Hello name="World" />
+[개발자 채용 중](/dev-recruit)입니다.
