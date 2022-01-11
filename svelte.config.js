@@ -12,7 +12,7 @@ const config = {
     prerender: {
       onError: 'continue',
     },
-    target: '#svelte',
+    target: 'body',
   },
 }
 

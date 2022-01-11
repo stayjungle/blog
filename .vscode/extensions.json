@@ -5,6 +5,7 @@
     "esbenp.prettier-vscode",
     "editorconfig.editorconfig",
     "stylelint.vscode-stylelint",
-    "orta.vscode-jest"
+    "orta.vscode-jest",
+    "csstools.postcss"
   ]
 }
