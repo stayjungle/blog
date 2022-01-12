@@ -1,13 +1,13 @@
 {
   ".svelte-kit/build/runtime/internal/start.js": {
-    "file": "start-1a0a36de.js",
+    "file": "start-5b709dbc.js",
     "src": ".svelte-kit/build/runtime/internal/start.js",
     "isEntry": true,
     "imports": [
-      "_vendor-798d2dd6.js"
+      "_vendor-eca5c147.js"
     ],
     "dynamicImports": [
-      "src/routes/__layout.svelte",
+      ".svelte-kit/build/components/layout.svelte",
       ".svelte-kit/build/components/error.svelte",
       "src/routes/index.md",
       "src/routes/dev-recruit.md"
@@ -16,46 +16,54 @@
       "assets/start-61d1577b.css"
     ]
   },
-  "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-d2bc06b2.js",
-    "src": "src/routes/__layout.svelte",
+  ".svelte-kit/build/components/layout.svelte": {
+    "file": "layout.svelte-48c03a93.js",
+    "src": ".svelte-kit/build/components/layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-798d2dd6.js"
-    ],
-    "css": [
-      "assets/pages/__layout.svelte-4346c7e0.css"
+      "_vendor-eca5c147.js"
     ]
   },
   ".svelte-kit/build/components/error.svelte": {
-    "file": "error.svelte-56e28aea.js",
+    "file": "error.svelte-bced0d6c.js",
     "src": ".svelte-kit/build/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-798d2dd6.js"
+      "_vendor-eca5c147.js"
     ]
   },
   "src/routes/index.md": {
-    "file": "pages/index.md-6d6115b8.js",
+    "file": "pages/index.md-40c28e98.js",
     "src": "src/routes/index.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-798d2dd6.js"
+      "_vendor-eca5c147.js",
+      "_Page-bcb75004.js"
     ]
   },
   "src/routes/dev-recruit.md": {
-    "file": "pages/dev-recruit.md-5857ced3.js",
+    "file": "pages/dev-recruit.md-d2a67883.js",
     "src": "src/routes/dev-recruit.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-798d2dd6.js"
+      "_vendor-eca5c147.js",
+      "_Page-bcb75004.js"
     ]
   },
-  "_vendor-798d2dd6.js": {
-    "file": "chunks/vendor-798d2dd6.js"
+  "_vendor-eca5c147.js": {
+    "file": "chunks/vendor-eca5c147.js"
+  },
+  "_Page-bcb75004.js": {
+    "file": "chunks/Page-bcb75004.js",
+    "imports": [
+      "_vendor-eca5c147.js"
+    ],
+    "css": [
+      "assets/Page-0878434c.css"
+    ]
   }
 }
