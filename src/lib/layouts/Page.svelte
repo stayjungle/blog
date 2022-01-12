@@ -9,6 +9,8 @@
   <title>{title}</title>
   <meta name="description" content={summary} />
 
+  <meta name="twitter:card" content="summary_large_image" />
+
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="스테이정글 블로그" />
   <meta property="og:url" content={$page.url.pathname} />
@@ -16,12 +18,6 @@
   <meta property="og:description" content={summary} />
   <meta property="og:image" content="https://blog.stayjungle.com/images/big-logo.png" />
   <meta property="og:image:alt" content="스테이정글 로고" />
-
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:title" content={title} />
-  <meta property="twitter:description" content={summary} />
-  <meta property="twitter:image" content="https://blog.stayjungle.com/images/big-logo.png" />
-  <meta property="twitter:image:alt" content="스테이정글 로고" />
 </svelte:head>
 
 <main>
