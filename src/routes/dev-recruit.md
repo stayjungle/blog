@@ -4,8 +4,26 @@ summary: 테스트 주도 개발, 짝 프로그래밍을 하며 함께 성장할
 layout: page
 ---
 <script>
+  import { onMount } from "svelte"
   import Swing from '$lib/components/Swing.svelte'
+  import E from '$lib/components/Emoji.svelte'
+
+  const seriousnessScales = ['유쾌함', '진지함']
+  let seriousnessScale = 0
+  let body
+
+  onMount(() => body = document.body)
+  $: if(body) body.dataset.seriousnessScale = seriousnessScale
 </script>
+
+<form class="seriousness">
+  {#each seriousnessScales as scale, i}
+  <label>
+    <input type=radio bind:group={seriousnessScale} name="seriousnessScales" value={i}>
+    {scale}
+  </label>
+  {/each}
+</form>
 
 <p class="웅성웅성">
   <Swing duration={0.5} content="👤 모야..." />
@@ -20,11 +38,11 @@ layout: page
   <Swing duration={1.1} content="👥" />
 </p>
 
-스테이정글 개발팀에서 함께 일할 동료를 찾습니다 🙋🏻‍♀️ 🙋🏾‍♂️
+스테이정글 개발팀에서 함께 일할 동료를 찾습니다 <E>🙋🏻‍♀️ 🙋🏾‍♂️</E>
 
 ## 스테이정글 소개
 
-스테이정글은 식품 분야 🧑🏻‍💼 경영 전문가, 👩🏼‍🍳 셰프, 👨🏻‍🔬 영양학 전문가, 👩‍💻 IT 기술자가 모여 창발적 가치를 만들어내는 🚀 스타트업입니다.
+스테이정글은 식품 분야 <E>🧑🏻‍💼</E> 경영 전문가, <E>👩🏼‍🍳</E> 셰프, <E>👨🏻‍🔬</E> 영양학 전문가, <E>👩‍💻</E> IT 기술자가 모여 창발적 가치를 만들어내는 <E>🚀</E> 스타트업입니다.
 
 음식, 식재료, 조리법, 영양성분, 건강 효과 등의 데이터를 수집/분석하고 고객의 식습관에 맞는
 맞춤 식단 구독 서비스를 제공합니다. 이를 통해 단기적으로는 식생활 문제를 해결하고 장기적으로는
@@ -140,5 +158,34 @@ layout: page
 <style>
   .웅성웅성 {
     margin-bottom: 2rem;
+  }
+
+  .seriousness {
+    position: absolute;
+    box-sizing: border-box;
+    left: 1rem;
+    top: 1rem;
+    width: 100%;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  :global(
+    [data-seriousness-scale="1"] h1,
+    [data-seriousness-scale="1"] h2,
+    [data-seriousness-scale="1"] h3,
+    [data-seriousness-scale="1"] p,
+    [data-seriousness-scale="1"] li
+  ) {
+    font-family: serif;
+    letter-spacing: -1px;
+  }
+
+  :global([data-seriousness-scale="1"]) .웅성웅성 {
+    display: none;
+  }
+
+  :global([data-seriousness-scale="1"] .emoji) {
+    display: none;
   }
 </style>
