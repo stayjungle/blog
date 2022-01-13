@@ -170,17 +170,6 @@ layout: page
     margin: 0;
   }
 
-  :global(
-    [data-seriousness-scale="1"] h1,
-    [data-seriousness-scale="1"] h2,
-    [data-seriousness-scale="1"] h3,
-    [data-seriousness-scale="1"] p,
-    [data-seriousness-scale="1"] li
-  ) {
-    font-family: serif;
-    letter-spacing: -1px;
-  }
-
   :global([data-seriousness-scale="1"]) .웅성웅성 {
     display: none;
   }
