@@ -21,7 +21,7 @@
 </svelte:head>
 
 <main>
-  <h1>{title}</h1>
+  <h1>{@html title}</h1>
   <slot />
 </main>
 
