@@ -165,9 +165,9 @@ layout: page
     box-sizing: border-box;
     left: 1rem;
     top: 1rem;
-    width: 100%;
     display: flex;
     gap: 1.5rem;
+    margin: 0;
   }
 
   :global(
