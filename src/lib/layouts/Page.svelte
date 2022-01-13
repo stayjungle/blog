@@ -5,6 +5,7 @@
   export let title = ''
   export let summary = '스테이정글, 블로그, 건겅한 식단, 정기배송'
 
+  $: plainTextTitle = title.replace(/<.+?>/g, '')
   onMount(() => {
     console.log('👩‍💻 개발자 콘솔을 열어본 당신, 개발자가 분명하군요! 어서 지원하세요! 🙋🏻‍♀️ 🙋🏾‍♂️')
     console.log('https://blog.stayjungle.com/dev-recruit/')
@@ -12,14 +13,14 @@
 </script>
 
 <svelte:head>
-  <title>{title}</title>
+  <title>{plainTextTitle}</title>
   <meta name="description" content={summary} />
   <meta name="twitter:card" content="summary_large_image" />
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="스테이정글 블로그" />
   <meta property="og:url" content={$page.url.pathname} />
-  <meta property="og:title" content={title} />
+  <meta property="og:title" content={plainTextTitle} />
   <meta property="og:description" content={summary} />
   <meta property="og:image" content="https://blog.stayjungle.com/images/big-logo.png" />
   <meta property="og:image:alt" content="스테이정글 로고" />
