@@ -1,14 +1,19 @@
 <script lang="ts">
+  import { onMount } from 'svelte'
   import { page } from '$app/stores'
 
   export let title = ''
   export let summary = '스테이정글, 블로그, 건겅한 식단, 정기배송'
+
+  onMount(() => {
+    console.log('👩‍💻 개발자 콘솔을 열어본 당신, 개발자가 분명하군요! 어서 지원하세요! 🙋🏻‍♀️ 🙋🏾‍♂️')
+    console.log('https://blog.stayjungle.com/dev-recruit/')
+  })
 </script>
 
 <svelte:head>
   <title>{title}</title>
   <meta name="description" content={summary} />
-
   <meta name="twitter:card" content="summary_large_image" />
 
   <meta property="og:type" content="website" />

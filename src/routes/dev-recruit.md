@@ -4,7 +4,7 @@ summary: 테스트 주도 개발, 짝 프로그래밍을 하며 함께 성장할
 layout: page
 ---
 <script>
-  import Swing from '$lib/components/Swing.svelte';
+  import Swing from '$lib/components/Swing.svelte'
 </script>
 
 <div aria-hidden="true" class="웅성웅성">
