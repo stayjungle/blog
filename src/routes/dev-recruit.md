@@ -7,22 +7,18 @@ layout: page
   import Swing from '$lib/components/Swing.svelte'
 </script>
 
-<div aria-hidden="true" class="웅성웅성">
-  <div>
-    <Swing duration={0.5} content="👤 모야..." />
-    <Swing duration={1.1} content="👥" />
-    <Swing duration={0.7} content="👥 웅성웅성" />
-    <Swing duration={0.3} content="👤 " />
-  </div>
-
-  <div>
-    <Swing duration={1.1} content="👥" />
-    <Swing duration={0.3} content="👤 " />
-    <Swing duration={0.7} content="👥 뭐지?" />
-    <Swing duration={1.3} content="👥 채용이래..." />
-    <Swing duration={1.1} content="👥" />
-  </div>
-</div>
+<p class="웅성웅성">
+  <Swing duration={0.5} content="👤 모야..." />
+  <Swing duration={1.1} content="👥" />
+  <Swing duration={0.7} content="👥 웅성웅성" />
+  <Swing duration={0.3} content="👤 " />
+  <br />
+  <Swing duration={1.1} content="👥" />
+  <Swing duration={0.3} content="👤 " />
+  <Swing duration={0.7} content="👥 뭐지?" />
+  <Swing duration={1.3} content="👥 채용이래..." />
+  <Swing duration={1.1} content="👥" />
+</p>
 
 스테이정글 개발팀에서 함께 일할 동료를 찾습니다 🙋🏻‍♀️ 🙋🏾‍♂️
 
