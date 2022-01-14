@@ -1,1 +1,1 @@
-<span role="presentation" class="emoji"><slot /></span>
+<span role="presentation" class="fun"><slot /></span>

@@ -22,15 +22,6 @@ module.exports = {
     '@typescript-eslint/ban-ts-comment': 'off',
     eqeqeq: ['error', 'always'],
     complexity: ['error', { max: 10 }],
-    'no-magic-numbers': [
-      'error',
-      {
-        enforceConst: true,
-        detectObjects: true,
-        ignoreDefaultValues: true,
-        ignore: [-1, 0, 1],
-      },
-    ],
     'no-return-await': 'error',
     'no-self-compare': 'error',
     'no-throw-literal': 'error',
@@ -43,12 +34,6 @@ module.exports = {
     {
       files: ['*.svelte'],
       processor: 'svelte3/svelte3',
-    },
-    {
-      files: ['*_test.ts'],
-      rules: {
-        'no-magic-numbers': 'off',
-      },
     },
   ],
 }

@@ -6,10 +6,12 @@ layout: page
 <script>
   import { onMount } from "svelte"
   import Swing from '$lib/components/Swing.svelte'
+  import AlienAbduction from '$lib/components/AlienAbduction.svelte'
   import E from '$lib/components/Emoji.svelte'
 
   const seriousnessScales = ['유쾌함', '진지함']
   let seriousnessScale = 0
+  let abductionFinished = false
   let body
 
   onMount(() => body = document.body)
@@ -25,20 +27,48 @@ layout: page
   {/each}
 </form>
 
-<p class="웅성웅성">
+<p class="웅성웅성 fun" style="text-align: center;">
+  <Swing duration={0.3} content="👤" />
+  <Swing duration={1.1} content="👥" />
+  <Swing duration={0.5} content="👤" />
+  <Swing duration={0.7} content="👤" />
+  <Swing duration={1.1} content="👥" />
+  <br />
   <Swing duration={0.5} content="👤 모야..." />
   <Swing duration={1.1} content="👥" />
   <Swing duration={0.7} content="👥 웅성웅성" />
   <Swing duration={0.3} content="👤 " />
   <br />
+  <Swing duration={0.7} content="👥 뭐지?" />
+  <Swing duration={1.1} content="👤" />
+  <Swing duration={0.7} content="👥 스테이정글이 어디야?" />
+  <Swing duration={0.3} content="👤 " />
+  <br />
   <Swing duration={1.1} content="👥" />
   <Swing duration={0.3} content="👤 " />
-  <Swing duration={0.7} content="👥 뭐지?" />
+  <Swing duration={0.7} content="👥 개발자?" />
   <Swing duration={1.3} content="👥 채용이래..." />
+  <Swing duration={1.1} content="👥" />
+  <br />
+  <Swing duration={0.3} content="👤" />
+  <Swing duration={1.1} content="👥" />
+  <Swing duration={0.5} content="👤" />
+  <Swing duration={0.7} content="👤" />
   <Swing duration={1.1} content="👥" />
 </p>
 
-스테이정글 개발팀에서 함께 일할 동료를 찾습니다 <E>🙋🏻‍♀️ 🙋🏾‍♂️</E>
+<p class="fun">채용담당자:<br />하아... 지원자가 없어. 개발자들은 대체 어디에 있는걸까?</p>
+
+<AlienAbduction on:finished={() => abductionFinished = true}/>
+
+<p class="fun">
+  채용담당자:<br />
+  {
+    !abductionFinished
+      ? "아... 네카라쿠배에서 다 데려가고 있었어 😱"
+      : "앗, 거기 당신! 스테이정글에 지원하시려고 마음을 먹었군요!"
+  }
+</p>
 
 ## 스테이정글 소개
 
@@ -170,11 +200,7 @@ layout: page
     margin: 0;
   }
 
-  :global([data-seriousness-scale="1"]) .웅성웅성 {
-    display: none;
-  }
-
-  :global([data-seriousness-scale="1"] .emoji) {
+  :global([data-seriousness-scale="1"] .fun) {
     display: none;
   }
 </style>
