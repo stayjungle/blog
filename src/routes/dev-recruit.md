@@ -57,6 +57,7 @@ layout: page
   <Swing duration={1.1} content="👥" />
 </p>
 
+<!--
 <p class="fun">채용담당자:<br />하아... 지원자가 없어. 개발자들은 대체 어디에 있는걸까?</p>
 
 <AlienAbduction on:finished={() => abductionFinished = true}/>
@@ -69,7 +70,7 @@ layout: page
       : "앗, 거기 당신! 스테이정글에 지원하시려고 마음을 먹었군요!"
   }
 </p>
-
+-->
 ## 스테이정글 소개
 
 스테이정글은 식품 분야 <E>🧑🏻‍💼</E> 경영 전문가, <E>👩🏼‍🍳</E> 셰프, <E>👨🏻‍🔬</E> 영양학 전문가, <E>👩‍💻</E> IT 기술자가 모여 창발적 가치를 만들어내는 <E>🚀</E> 스타트업입니다.
