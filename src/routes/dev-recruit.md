@@ -9,22 +9,18 @@ layout: page
   import AlienAbduction from '$lib/components/AlienAbduction.svelte'
   import E from '$lib/components/Emoji.svelte'
 
-  const seriousnessScales = ['유쾌함', '진지함']
-  let seriousnessScale = 0
+  let serious = false
   let abductionFinished = false
   let body
 
   onMount(() => body = document.body)
-  $: if(body) body.dataset.seriousnessScale = seriousnessScale
+  $: if(body) body.dataset.serious = serious
 </script>
 
 <form class="seriousness">
-  {#each seriousnessScales as scale, i}
   <label>
-    <input type=radio bind:group={seriousnessScale} name="seriousnessScales" value={i}>
-    {scale}
+    <input type="checkbox" name="seriousness" bind:checked={serious}>진지합니다
   </label>
-  {/each}
 </form>
 
 <p class="웅성웅성 fun" style="text-align: center;">
@@ -201,7 +197,7 @@ layout: page
     margin: 0;
   }
 
-  :global([data-seriousness-scale="1"] .fun) {
+  :global([data-serious="true"] .fun) {
     display: none;
   }
 </style>
