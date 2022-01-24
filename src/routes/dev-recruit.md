@@ -172,7 +172,8 @@ layout: page
 
 사전과제에 대한 부연:
 
-* Python, JavaScript, TypeScript 중 한 언어를 선택하여 풀어주세요.
+* 백엔드는 Python, JavaScript, TypeScript 중 한 언어를 선택하여 풀어주세요.
+* 프론트엔드는 JavaScript, TypeScript 중 한 언어를 선택하여 풀어주세요.
 * 되도록 단위 테스트를 함께 작성해주세요.
 
 본과제에 대한 부연:
