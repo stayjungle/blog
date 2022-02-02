@@ -87,7 +87,9 @@
   <div
     class="ufo"
     class:gone={ufo.gone}
-    style={`--x: ${ufo.x}px; --y: ${ufo.y}px; --r: ${ufo.r}deg;`}
+    style:--x={`${ufo.x}px`}
+    style:--y={`${ufo.y}px`}
+    style:--r={`${ufo.r}deg`}
   >
     🛸
   </div>
@@ -96,7 +98,8 @@
       <div
         class="developer"
         class:abducted={d.abducted}
-        style={`--x: ${d.abducted ? ufo.x : d.x}px; --y: ${d.abducted ? ufo.y : d.y}px;`}
+        style:--x={`${d.abducted ? ufo.x : d.x}px`}
+        style:--y={`${d.abducted ? ufo.y : d.y}px`}
       >
         {d.c}
       </div>

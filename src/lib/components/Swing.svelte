@@ -3,7 +3,7 @@
   export let content: string
 </script>
 
-<span style={`--duration: ${duration}s`}>
+<span style:--duration={`${duration}s`}>
   {content}
 </span>
 
