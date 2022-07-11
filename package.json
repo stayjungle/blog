@@ -15,7 +15,7 @@
     "@picocss/pico": "^1.4.4",
     "@sveltejs/adapter-auto": "^1.0.0-next.18",
     "@sveltejs/adapter-static": "^1.0.0-next.26",
-    "@sveltejs/kit": "^1.0.0-next.251",
+    "@sveltejs/kit": "^1.0.0-next.367",
     "@typescript-eslint/eslint-plugin": "^5.10.1",
     "@typescript-eslint/parser": "^5.10.1",
     "eslint": "^8.8.0",
